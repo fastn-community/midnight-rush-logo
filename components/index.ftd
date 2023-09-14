@@ -644,7 +644,7 @@ width: fill-container
 spacing.fixed.px: 60
 padding-vertical.px: 111
 padding-horizontal.px: 50
-background.solid: $inherited.colors.background.step-2
+
 
 -- ftd.column:
 spacing.fixed.px: 17
