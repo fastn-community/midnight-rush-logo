@@ -235,14 +235,14 @@ optional ftd.image-src company-logo:
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 80
+spacing.fixed.px: 60
 padding-vertical.px: 111
 padding-horizontal.px: 50
 
 -- ftd.column:
 spacing.fixed.px: 17
 width.fixed.percent: 50
-align-content: center
+align-self: center
 
 -- ftd.row:
 if: { quote-block-helper-desktop.title != NULL}
@@ -250,7 +250,7 @@ if: { quote-block-helper-desktop.title != NULL}
 -- ftd.text: $with-quotes(a = $quote-block-helper-desktop.title)
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
-style: bold
+style: medium
 
 -- end: ftd.row
 
@@ -650,7 +650,7 @@ background.solid: $inherited.colors.background.step-2
 -- ftd.column:
 spacing.fixed.px: 17
 width.fixed.percent: 50
-align-content: center
+align-self: center
 
 -- ftd.text: $quote-divider-helper-desktop.title
 if: { quote-divider-helper-desktop.title != NULL}
