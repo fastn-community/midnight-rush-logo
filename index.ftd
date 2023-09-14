@@ -53,9 +53,9 @@ optional string full-name:
 optional string company-name:
 optional ftd.image-src company-logo:
 
--- components.quote-divider-helper: $quote-block.title
-subtitle: $quote-block.subtitle
-logo-list: $quote-block.logo-list
+-- components.quote-divider-helper: $quote-divider.title
+subtitle: $quote-divider.subtitle
+logo-list: $quote-divider.logo-list
 
 -- end: quote-divider
 
@@ -82,8 +82,8 @@ optional string company-name:
 optional ftd.image-src company-logo:
 
 
--- components.large-title-helper: $quote-block.title
-logo-list: $quote-block.logo-list
+-- components.large-title-helper: $large-title.title
+logo-list: $large-title.logo-list
 
 -- end: large-title
 
@@ -97,8 +97,8 @@ optional string full-name:
 optional string company-name:
 optional ftd.image-src company-logo:
 
--- components.small-title-helper: $quote-block.title
-logo-list: $quote-block.logo-list
+-- components.small-title-helper: $small-title.title
+logo-list: $small-title.logo-list
 
 -- end: small-title
 
@@ -113,6 +113,6 @@ optional string company-name:
 optional ftd.image-src company-logo:
 
 -- components.without-title-helper: 
-logo-list: $quote-block.logo-list
+logo-list: $without-title.logo-list
 
 -- end: without-title
