@@ -241,7 +241,7 @@ padding-horizontal.px: 50
 
 -- ftd.column:
 spacing.fixed.px: 17
-width.fixed.percent: 45
+width.fixed.percent: 50
 align-content: center
 
 -- ftd.row:
@@ -649,7 +649,7 @@ background.solid: $inherited.colors.background.step-2
 
 -- ftd.column:
 spacing.fixed.px: 17
-width.fixed.percent: 45
+width.fixed.percent: 50
 align-content: center
 
 -- ftd.text: $quote-divider-helper-desktop.title
