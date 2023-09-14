@@ -242,7 +242,7 @@ padding-horizontal.px: 50
 -- ftd.column:
 spacing.fixed.px: 17
 padding.px: 30
-width.fixed.percent: 50
+width.fixed.percent: 45
 
 -- ftd.row:
 if: { quote-block-helper-desktop.title != NULL}
@@ -287,7 +287,7 @@ if: { quote-block-helper-desktop.full-name != NULL }
 -- ftd.row:
 wrap: true
 spacing.fixed.px: 32
-width.fixed.percent: 50
+width.fixed.percent: 55
 
 -- logo-lists:
 $loop$: $quote-block-helper-desktop.logo-list as $obj
@@ -648,7 +648,7 @@ background.solid: $inherited.colors.background.step-2
 
 -- ftd.column:
 spacing.fixed.px: 17
-width.fixed.percent: 50
+width.fixed.percent: 45
 
 -- ftd.text: $quote-divider-helper-desktop.title
 if: { quote-divider-helper-desktop.title != NULL}
@@ -690,7 +690,7 @@ if: { quote-divider-helper-desktop.full-name != NULL }
 -- ftd.row:
 wrap: true
 spacing.fixed.px: 40
-width.fixed.percent: 50
+width.fixed.percent: 55
 
 -- logo-lists:
 $loop$: $quote-divider-helper-desktop.logo-list as $obj
