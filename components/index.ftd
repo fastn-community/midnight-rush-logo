@@ -656,12 +656,13 @@ align-content: center
 if: { quote-divider-helper-desktop.title != NULL}
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
-style: bold
+style: medium
 
 -- ftd.text:
 if: { quote-divider-helper-desktop.subtitle != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+width: fill-container
 
 $quote-divider-helper-desktop.subtitle
 
