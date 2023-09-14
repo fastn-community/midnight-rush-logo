@@ -642,7 +642,7 @@ optional ftd.image-src company-logo:
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 80
+spacing.fixed.px: 60
 padding-vertical.px: 111
 padding-horizontal.px: 50
 background.solid: $inherited.colors.background.step-2
