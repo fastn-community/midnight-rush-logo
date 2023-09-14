@@ -558,7 +558,6 @@ color: $inherited.colors.text
 
 
 -- ftd.text: $small-title-helper-desktop.title
-style: medium
 max-width.fixed.percent: 70
 style: bold
 
