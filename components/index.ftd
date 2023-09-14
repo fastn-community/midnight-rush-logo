@@ -182,7 +182,7 @@ logo-list: $small-title-helper.logo-list
 
 
 
--- component quote-diveder-helper:
+-- component quote-divider:
 caption title:
 optional body subtitle:
 data.logos list logo-list: 
@@ -197,26 +197,38 @@ width: fill-container
 
 -- ftd.desktop:
 
--- quote-diveder-helper-desktop: $quote-diveder-helper.title
-subtitle: $quote-diveder-helper.subtitle
-logo-list: $quote-diveder-helper.logo-list
-full-name: $quote-diveder-helper.full-name
-company-name: $quote-diveder-helper.company-name
-company-logo: $quote-diveder-helper.company-logo
+-- quote-divider-desktop: $quote-divider.title
+subtitle: $quote-divider.subtitle
+logo-list: $quote-divider.logo-list
+full-name: $quote-divider.full-name
+company-name: $quote-divider.company-name
+company-logo: $quote-divider.company-logo
 
 -- end: ftd.desktop
 
 -- ftd.mobile:
 
--- quote-diveder-helper-mobile: $quote-diveder-helper.title
-subtitle: $quote-diveder-helper.subtitle
-logo-list: $quote-diveder-helper.logo-list
+-- quote-divider-mobile: $quote-divider.title
+subtitle: $quote-divider.subtitle
+logo-list: $quote-divider.logo-list
 
 -- end: ftd.mobile
 
 -- end: ftd.column
 
--- end: quote-diveder-helper
+-- end: quote-divider
+
+
+
+
+
+
+
+
+
+
+
+
 
 -- component quote-block-helper-desktop:
 caption title:
@@ -231,17 +243,14 @@ width: fill-container
 spacing.fixed.px: 80
 padding-vertical.px: 111
 padding-horizontal.px: 50
-background.solid: $inherited.colors.background.step-2
 
 -- ftd.column:
 spacing.fixed.px: 17
 padding.px: 30
 width.fixed.percent: 50
-background.solid: $inherited.colors.background.base
 
 -- ftd.row:
 if: { quote-block-helper-desktop.title != NULL}
-
 
 -- ftd.text: $with-quotes(a = $quote-block-helper-desktop.title)
 role: $inherited.types.heading-large
@@ -271,7 +280,6 @@ width: fill-container
 -- ftd.text: $quote-block-helper-desktop.full-name
 if: { quote-block-helper-desktop.full-name != NULL }
 
-
 -- ftd.text: $quote-block-helper-desktop.company-name
 if: { quote-block-helper-desktop.full-name != NULL }
 
@@ -283,7 +291,7 @@ if: { quote-block-helper-desktop.full-name != NULL }
 
 -- ftd.row:
 wrap: true
-spacing.fixed.px: 40
+spacing.fixed.px: 32
 width.fixed.percent: 50
 
 -- logo-lists:
@@ -328,7 +336,6 @@ width: fill-container
 spacing.fixed.px: 24
 padding-vertical.px: 24
 padding-horizontal.px: 24
-background.solid: $inherited.colors.background.step-2
 
 -- ftd.column:
 spacing.fixed.px: 17
@@ -367,6 +374,9 @@ link: $obj.link
 
 
 
+
+
+
 -- component large-title-helper-desktop:
 caption title:
 optional body subtitle:
@@ -379,7 +389,6 @@ spacing.fixed.px: 17
 align-content: center
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
-
 
 -- ftd.text: $large-title-helper-desktop.title
 if: { large-title-helper-desktop.title != NULL }
@@ -555,6 +564,7 @@ color: $inherited.colors.text
 -- ftd.text: $small-title-helper-desktop.title
 style: medium
 max-width.fixed.percent: 70
+style: bold
 
 -- ftd.text:
 if: { small-title-helper-desktop.subtitle != NULL }
@@ -598,6 +608,7 @@ spacing.fixed.px: 17
 -- ftd.text: $small-title-helper-mobile.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
+style: bold
 
 -- ftd.text:
 if: { small-title-helper-mobile.subtitle != NULL }
@@ -625,7 +636,7 @@ link: $obj.link
 
 
 
--- component quote-diveder-helper-desktop:
+-- component quote-divider-desktop:
 caption title:
 optional body subtitle:
 data.logos list logo-list: 
@@ -644,36 +655,36 @@ background.solid: $inherited.colors.background.step-2
 spacing.fixed.px: 17
 width.fixed.percent: 50
 
--- ftd.text: $quote-diveder-helper-desktop.title
-if: { quote-diveder-helper-desktop.title != NULL}
+-- ftd.text: $quote-divider-desktop.title
+if: { quote-divider-desktop.title != NULL}
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 
 -- ftd.text:
-if: { quote-diveder-helper-desktop.subtitle != NULL }
+if: { quote-divider-desktop.subtitle != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
-$quote-diveder-helper-desktop.subtitle
+$quote-divider-desktop.subtitle
 
 -- ftd.row:
 spacing.fixed.px: 20
 align-content: center
 
 -- ftd.image:
-if: { quote-diveder-helper-desktop.company-logo !=  NULL }
-src: $quote-diveder-helper-desktop.company-logo
+if: { quote-divider-desktop.company-logo !=  NULL }
+src: $quote-divider-desktop.company-logo
 width.fixed.px: 40
 
 -- ftd.column:
 width: fill-container
 
--- ftd.text: $quote-diveder-helper-desktop.full-name
-if: { quote-diveder-helper-desktop.full-name != NULL }
+-- ftd.text: $quote-divider-desktop.full-name
+if: { quote-divider-desktop.full-name != NULL }
 
 
--- ftd.text: $quote-diveder-helper-desktop.company-name
-if: { quote-diveder-helper-desktop.full-name != NULL }
+-- ftd.text: $quote-divider-desktop.company-name
+if: { quote-divider-desktop.full-name != NULL }
 
 -- end: ftd.column
 
@@ -687,7 +698,7 @@ spacing.fixed.px: 40
 width.fixed.percent: 50
 
 -- logo-lists:
-$loop$: $quote-diveder-helper-desktop.logo-list as $obj
+$loop$: $quote-divider-desktop.logo-list as $obj
 logo: $obj.logo
 link: $obj.link
 
@@ -695,7 +706,7 @@ link: $obj.link
 
 -- end: ftd.row
 
--- end: quote-diveder-helper-desktop
+-- end: quote-divider-desktop
 
 
 
@@ -706,7 +717,7 @@ link: $obj.link
 
 
 
--- component quote-diveder-helper-mobile:
+-- component quote-divider-mobile:
 caption title:
 optional body subtitle:
 data.logos list logo-list:
@@ -722,16 +733,16 @@ padding-horizontal.px: 24
 spacing.fixed.px: 17
 padding-top.px: 30
 
--- ftd.text: $quote-diveder-helper-mobile.title
+-- ftd.text: $quote-divider-mobile.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 
 -- ftd.text:
-if: { quote-diveder-helper-mobile.subtitle != NULL }
+if: { quote-divider-mobile.subtitle != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
-$quote-diveder-helper-mobile.subtitle
+$quote-divider-mobile.subtitle
 
 -- end: ftd.column
 
@@ -741,7 +752,7 @@ spacing.fixed.px: 10
 width: fill-container
 
 -- logo-lists:
-$loop$: $quote-diveder-helper-mobile.logo-list as $obj
+$loop$: $quote-divider-mobile.logo-list as $obj
 logo: $obj.logo
 link: $obj.link
 
@@ -749,7 +760,7 @@ link: $obj.link
 
 -- end: ftd.column
 
--- end: quote-diveder-helper-mobile
+-- end: quote-divider-mobile
 
 
 
